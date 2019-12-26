@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="wrap_content"
+    android:background="#FFE4C4"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/editTextBesin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Besin"
+        />
+
+    <EditText
+        android:id="@+id/editTextProtein"
+        android:hint="Protein"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/editTextBesin"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/editTextKalori"
+        android:hint="Kalori"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/editTextProtein"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/editTextYag"
+        android:hint="Yag"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/editTextKalori"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/editTextKarbon"
+        android:hint="Karbon"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/editTextYag"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+
+
+    <Button
+        android:id="@+id/save_popup"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextKarbon"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="-109dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/save" />
+
+</RelativeLayout>

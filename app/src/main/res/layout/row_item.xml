@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="10dp"
+        android:textSize="1dp"
+        android:textColor="#1E90FF"
+        android:id="@+id/textViewId"
+        android:layout_row="0"
+        android:layout_column="1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#4B0082"
+        android:layout_below="@+id/textViewId"
+        android:id="@+id/textViewBesin"
+        android:layout_row="1"
+        android:layout_column="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#4B0082"
+        android:layout_below="@+id/textViewBesin"
+        android:id="@+id/textViewProtein"
+        android:layout_row="1"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#4B0082"
+        android:layout_below="@+id/textViewProtein"
+        android:id="@+id/textViewKalori"
+        android:layout_row="2"
+        android:layout_column="3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#4B0082"
+        android:layout_below="@+id/textViewKalori"
+        android:id="@+id/textViewYag"
+        android:layout_row="3"
+        android:layout_column="4" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#4B0082"
+        android:layout_below="@+id/textViewYag"
+        android:id="@+id/textViewKarbon"
+        android:layout_row="4"
+        android:layout_column="5" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="269dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/textViewId"
+        android:background="?android:colorBackground"
+        android:drawableLeft="@drawable/edit" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_toRightOf="@+id/edit"
+        android:background="?android:colorBackground"
+        android:drawableLeft="@drawable/delete" />
+
+
+</RelativeLayout>
