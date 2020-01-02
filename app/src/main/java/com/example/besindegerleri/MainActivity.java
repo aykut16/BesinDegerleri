@@ -32,11 +32,15 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<Besin> besins;
         SQLiteDatabaseHandler db;
-        Button btnSubmit;
+        Button btnSubmit,btnNextt;
         PopupWindow pwindo=null;
         Activity activity;
         ListView listView=null;
         CustomBesinList customBesinList;
+
+
+
+
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
                     addPopUp();
                 }
             });
+            btnNextt=(Button) findViewById(R.id.btnNext);
+            btnNextt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    nextt();
+                }
+            });
+
             Log.d("MainActivity: ", "Before reading mainactivity");
             besins = (ArrayList) db.getAllBesin();
 
@@ -77,9 +89,19 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "You Selected " + besins.get(position).getBesin() + " as Besin", Toast.LENGTH_SHORT).show();
                 }
             });
+
+
+
+
         }
 
-        public void addPopUp() {
+    public void nextt() {
+        Intent intent=new Intent(MainActivity.this , Main2Activity.class);
+        startActivity(intent);
+    }
+
+
+    public void addPopUp() {
             LayoutInflater inflater = activity.getLayoutInflater();
             View popupWindowView=null;
             PopupWindow popupWindow=null;

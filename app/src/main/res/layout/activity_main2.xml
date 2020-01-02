@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.example.besindegerleri.Main2Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <Button
+
+                android:id="@+id/btnSubmit"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/arti"
+                android:gravity="start" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/btnNext2"
+                android:layout_toLeftOf="@+id/btnNext2"
+                android:layout_toEndOf="@id/btnSubmit"
+                android:layout_toRightOf="@id/btnSubmit"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="Toplam"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/btnNext2"
+                android:layout_width="45dp"
+                android:layout_height="63dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/refresh" />
+
+            <ListView
+                android:id="@+id/list2"
+                android:layout_width="match_parent"
+                android:layout_height="538dp"
+                android:layout_below="@id/btnSubmit">
+
+            </ListView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/real"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="bottom"
+        android:foregroundGravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/Orta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#130D0D"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textKarbon"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textYag"
+            android:gravity="center"
+            android:text="Karbon"
+            android:textColor="#130D0D"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textKalori"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/Orta"
+            android:gravity="center"
+            android:text="Kalori"
+            android:textColor="#130D0D"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textProtein"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/textKalori"
+            android:gravity="center"
+            android:text="Protein"
+            android:textColor="#130D0D"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textYag"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Orta"
+            android:gravity="center"
+            android:text="Yag"
+            android:textColor="#130D0D"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Orta"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textYag1"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textYag"
+            android:layout_toRightOf="@id/textView13"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#130D0D"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textKarbon1"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textKarbon"
+            android:layout_toRightOf="@id/textYag1"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#130D0D"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textKalori1"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textKalori"
+            android:layout_toLeftOf="@id/textView13"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#130D0D"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textProtein1"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textProtein"
+            android:layout_toLeftOf="@id/textKalori1"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#130D0D"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

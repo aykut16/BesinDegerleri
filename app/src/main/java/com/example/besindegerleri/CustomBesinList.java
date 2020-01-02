@@ -102,9 +102,6 @@ public abstract class CustomBesinList extends BaseAdapter {
     }
 
 
-
-
-
     public long getItemId(int position) {
         return position;
     }
@@ -113,7 +110,7 @@ public abstract class CustomBesinList extends BaseAdapter {
         return position;
     }
 
-    public int getBesi() {
+    public int getBesin() {
         return besins.size();
     }
 
